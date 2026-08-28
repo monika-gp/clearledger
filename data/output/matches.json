@@ -1,0 +1,266 @@
+[
+  {
+    "stmt_id": "STM-5004",
+    "txn_id": "LED-1004",
+    "confidence": "high",
+    "reason": "Exact amount match (24345.26), zero date difference, and strong narration match (\"MAPANDCO\" aligning with \"Maple & Co\" and \"INV2899\" with \"INV-2899\")."
+  },
+  {
+    "stmt_id": "STM-5029",
+    "txn_id": "LED-1029",
+    "confidence": "high",
+    "reason": "Exact match on amount (39347.15), date (2026-08-04), and reference (INV-2666), with strong counterparty name and narration overlap."
+  },
+  {
+    "stmt_id": "STM-5025",
+    "txn_id": "LED-1025",
+    "confidence": "high",
+    "reason": "Exact match on amount (22621.88), date (2026-08-17), and reference invoice INV-2680 with corresponding counterparty Maple & Co."
+  },
+  {
+    "stmt_id": "STM-5006",
+    "txn_id": "LED-1006",
+    "confidence": "high",
+    "reason": "Exact amount match (29133.42), 1-day bank lag, matching counterparty, and explicit reference INV-2596 in the narration."
+  },
+  {
+    "stmt_id": "STM-5024",
+    "txn_id": "LED-1024",
+    "confidence": "high",
+    "reason": "Exact amount match (38159.57), exact date match, and strong reference/name alignment with INV-2815 and Ivory Interiors."
+  },
+  {
+    "stmt_id": "STM-5042",
+    "txn_id": "LED-1042",
+    "confidence": "high",
+    "reason": "Matches exact date, reference INV-2339, counterparty Orbit Electronics, with a normal 1.43% fee difference in amount."
+  },
+  {
+    "stmt_id": "STM-5007",
+    "txn_id": "LED-1007",
+    "confidence": "high",
+    "reason": "Exact match on amount (42234.73), date (2026-08-14), reference (INV-2994), and counterparty name (Redwood Pharma)."
+  },
+  {
+    "stmt_id": "STM-5044",
+    "txn_id": "LED-1044",
+    "confidence": "high",
+    "reason": "Exact amount match (31722.9), a normal 3-day settlement lag (dateDiff=3d), and matching counterparty/invoice reference (Silverline Textiles, INV-2738)."
+  },
+  {
+    "stmt_id": "STM-5036",
+    "txn_id": "LED-1036",
+    "confidence": "high",
+    "reason": "Exact amount match (13507.37), matching reference INV-2668, consistent counterparty name (\"Bluepeak Retail\"), and a normal 1-day settlement lag."
+  },
+  {
+    "stmt_id": "STM-5005",
+    "txn_id": "LED-1005",
+    "confidence": "high",
+    "reason": "Exact amount match ($9391.32), exact date (2026-08-10), matching invoice reference (INV-2821), and strong counterparty token overlap with \"Pinnacle Steel\" / \"PINSTE\"."
+  },
+  {
+    "stmt_id": "STM-5003",
+    "txn_id": "LED-1003",
+    "confidence": "high",
+    "reason": "Exact amount match (21841.31), exact date match, and clear narration/reference alignment with Crestline Media and INV-2137."
+  },
+  {
+    "stmt_id": "STM-5043",
+    "txn_id": "LED-1043",
+    "confidence": "high",
+    "reason": "Exact match on amount (34730.21), date (2026-08-03), and strong narration reference to Amber Foods and INV-2286."
+  },
+  {
+    "stmt_id": "STM-5012",
+    "txn_id": "LED-1012",
+    "confidence": "high",
+    "reason": "Exact amount match (7003.94), exact date match (2026-08-17), and matching invoice reference (INV-2369) with strong counterparty overlap."
+  },
+  {
+    "stmt_id": "STM-5001",
+    "txn_id": "LED-1001",
+    "confidence": "high",
+    "reason": "Exact match on amount (37061.76), date (2026-08-17), and reference (INV-2507) with the counterparty name clearly present in the bank narration."
+  },
+  {
+    "stmt_id": "STM-5031",
+    "txn_id": "LED-1031",
+    "confidence": "high",
+    "reason": "Exact match on amount (13736.29), date (2026-08-11), and reference/counterparty details."
+  },
+  {
+    "stmt_id": "STM-5026",
+    "txn_id": "LED-1026",
+    "confidence": "high",
+    "reason": "Exact match on amount (16801.9), exact date (2026-08-17), and strong counterparty/reference match with Falcon Freight and INV-2151."
+  },
+  {
+    "stmt_id": "STM-5040",
+    "txn_id": "LED-1040",
+    "confidence": "high",
+    "reason": "Exact amount match (34520.21), exact date match, and invoice number reference (INV-2546) match perfectly with the bank narration."
+  },
+  {
+    "stmt_id": "STM-5013",
+    "txn_id": "LED-1013",
+    "confidence": "high",
+    "reason": "Exact amount match (10844.94), exact date match, and invoice number reference INV-2489 matches the bank narration INV-2489."
+  },
+  {
+    "stmt_id": "STM-5035",
+    "txn_id": "LED-1035",
+    "confidence": "high",
+    "reason": "Exact match on amount (40339.83), date (2026-08-11), reference (INV-2176), and counterparty name."
+  },
+  {
+    "stmt_id": "STM-5030",
+    "txn_id": "LED-1030",
+    "confidence": "high",
+    "reason": "Exact match on amount (23223.47), date (2026-08-09), and reference/counterparty details (INV-2331 and Zenith Auto Parts)."
+  },
+  {
+    "stmt_id": "STM-5028",
+    "txn_id": "LED-1028",
+    "confidence": "high",
+    "reason": "Exact match on amount (14018.5) and date (2026-08-03), with strong narration overlap (\"NIMLOG\" matching \"Nimbus Logistics\" and reference INV-2047)."
+  },
+  {
+    "stmt_id": "STM-5018",
+    "txn_id": "LED-1018",
+    "confidence": "high",
+    "reason": "Exact match on amount (33630.14), exact match on date (2026-08-05), and strong narrative/reference overlap with Orbit Electronics and INV-2169."
+  },
+  {
+    "stmt_id": "STM-5022",
+    "txn_id": "LED-1022",
+    "confidence": "high",
+    "reason": "Exact match on amount (19787.36), date (2026-08-11), and reference/counterparty (\"Vertex Industries\" and \"INV-2984\")."
+  },
+  {
+    "stmt_id": "STM-5027",
+    "txn_id": "LED-1027",
+    "confidence": "high",
+    "reason": "Matches exact date, reference INV-2955, and counterparty Bluepeak Retail, with an amount difference of 1.56% due to standard bank fees."
+  },
+  {
+    "stmt_id": "STM-5037",
+    "txn_id": "LED-1037",
+    "confidence": "high",
+    "reason": "Exact match on amount (17222.94), date (2026-08-06), counterparty, and invoice reference (INV-2833)."
+  },
+  {
+    "stmt_id": "STM-5021",
+    "txn_id": "LED-1021",
+    "confidence": "high",
+    "reason": "Exact amount match (42098.58), expected settlement date lag of 3 days, and direct reference to invoice INV-2450 with matching counterparty Harbor Exports."
+  },
+  {
+    "stmt_id": "STM-5038",
+    "txn_id": "LED-1038",
+    "confidence": "high",
+    "reason": "Exact match on amount (47628.84), date (2026-08-06), and invoice reference (INV-2518) with counterparty Crestline Media."
+  },
+  {
+    "stmt_id": "STM-5017",
+    "txn_id": "LED-1017",
+    "confidence": "high",
+    "reason": "Exact match on amount (27544.92) and date (2026-08-12), with clear reference to Falcon Freight and INV-2235 in both the bank narration and ledger entry."
+  },
+  {
+    "stmt_id": "STM-5009",
+    "txn_id": "LED-1009",
+    "confidence": "high",
+    "reason": "Exact match on amount (24031.89), date (2026-08-16), reference (INV-2129), and counterparty name (\"Bluepeak Retail\")."
+  },
+  {
+    "stmt_id": "STM-5015",
+    "txn_id": "LED-1015",
+    "confidence": "high",
+    "reason": "Exact amount match (49433.93), exact date match (2026-08-04), and clear reference to invoice INV-2170 in the bank narration."
+  },
+  {
+    "stmt_id": "STM-5014",
+    "txn_id": "LED-1014",
+    "confidence": "high",
+    "reason": "Exact match on amount (14136.49), date (2026-08-07), and reference invoice INV-2029 with Silverline Textiles."
+  },
+  {
+    "stmt_id": "STM-5032",
+    "txn_id": "LED-1032",
+    "confidence": "high",
+    "reason": "Matches exact date, same counterparty (Nimbus Logistics), matching reference (INV-2943), and expected minor amount difference due to bank fees."
+  },
+  {
+    "stmt_id": "STM-5002",
+    "txn_id": "LED-1002",
+    "confidence": "high",
+    "reason": "Exact amount match (4197.38), close date (1 day lag), and direct counterparty and reference (Silverline Textiles, INV-2680) alignment."
+  },
+  {
+    "stmt_id": "STM-5041",
+    "txn_id": "LED-1041",
+    "confidence": "high",
+    "reason": "Exact amount match (15781.58), matching invoice reference INV-2667, counterparty \"Lotus Handicrafts\", and an expected 3-day bank settlement lag."
+  },
+  {
+    "stmt_id": "STM-5011",
+    "txn_id": "LED-1011",
+    "confidence": "high",
+    "reason": "Exact amount match (10744.23), identical date, and matching counterparty name and reference (INV-2886)."
+  },
+  {
+    "stmt_id": "STM-5020",
+    "txn_id": "LED-1020",
+    "confidence": "high",
+    "reason": "Matches exact date (2026-08-18), exact invoice reference (INV-2811), and counterparty name (Maple & Co), with the amount difference of 1.80% falling well within expected gateway fee deductions."
+  },
+  {
+    "stmt_id": "STM-5019",
+    "txn_id": "LED-1019",
+    "confidence": "high",
+    "reason": "Exact amount match (16032.84), identical date (2026-08-01), matching reference INV-2577, and matching counterparty Nimbus Logistics."
+  },
+  {
+    "stmt_id": "STM-5033",
+    "txn_id": "LED-1033",
+    "confidence": "high",
+    "reason": "Exact amount match (5390.17), matching invoice reference INV-2056, consistent counterparty name, and a standard 3-day settlement date lag."
+  },
+  {
+    "stmt_id": "STM-5023",
+    "txn_id": "LED-1023",
+    "confidence": "high",
+    "reason": "Exact match on amount (37309.22), date (2026-08-02), and strong reference alignment with INV-2069 and counterparty Quantum Devices."
+  },
+  {
+    "stmt_id": "STM-5010",
+    "txn_id": "LED-1010",
+    "confidence": "high",
+    "reason": "Exact amount match (35134.72), identical date (2026-08-05), and strong name/reference overlap between narration and ledger counterparty/reference."
+  },
+  {
+    "stmt_id": "STM-5016",
+    "txn_id": "LED-1016",
+    "confidence": "high",
+    "reason": "Candidate LED-1016 matches the exact date (2026-08-08), exact reference (INV-2336), has strong counterparty name overlap, and shows an expected 1.24% gateway fee difference in amount."
+  },
+  {
+    "stmt_id": "STM-5039",
+    "txn_id": "LED-1039",
+    "confidence": "high",
+    "reason": "Exact match on amount (28642.54), exact match on date (2026-08-16), and exact invoice reference (INV-2311) present in both the bank narration and ledger entry."
+  },
+  {
+    "stmt_id": "STM-5008",
+    "txn_id": "LED-1008",
+    "confidence": "high",
+    "reason": "Exact amount match, matching reference INV-2696, and a logical 3-day bank settlement lag with counterparty Harbor Exports."
+  },
+  {
+    "stmt_id": "STM-5034",
+    "txn_id": "LED-1034",
+    "confidence": "high",
+    "reason": "Exact match on amount (5183.55) and date (2026-08-19), with strong narration overlap (\"Greenfield Agro\" and invoice reference \"INV-2750\")."
+  }
+]

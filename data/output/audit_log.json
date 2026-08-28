@@ -1,0 +1,2702 @@
+[
+  {
+    "stmt_id": "STM-5004",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1004",
+        "score": 0.8,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1009",
+        "score": 0.542,
+        "signals": {
+          "amountDiffPct": 0.013,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1030",
+        "score": 0.39,
+        "signals": {
+          "amountDiffPct": 0.0483,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.2
+        }
+      },
+      {
+        "txn_id": "LED-1025",
+        "score": 0.336,
+        "signals": {
+          "amountDiffPct": 0.0762,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1011",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 1.2659,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1004",
+    "confidence": "high",
+    "reason": "Exact amount match (24345.26), zero date difference, and strong narration match (\"MAPANDCO\" aligning with \"Maple & Co\" and \"INV2899\" with \"INV-2899\").",
+    "timestamp": "2026-08-28T16:21:10.888Z"
+  },
+  {
+    "stmt_id": "STM-5029",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1029",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1035",
+        "score": 0.416,
+        "signals": {
+          "amountDiffPct": 0.0246,
+          "dateDiffDays": 7,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1023",
+        "score": 0.407,
+        "signals": {
+          "amountDiffPct": 0.0546,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1041",
+        "score": 0.4,
+        "signals": {
+          "amountDiffPct": 1.4932,
+          "dateDiffDays": 8,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1024",
+        "score": 0.362,
+        "signals": {
+          "amountDiffPct": 0.0311,
+          "dateDiffDays": 15,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1029",
+    "confidence": "high",
+    "reason": "Exact match on amount (39347.15), date (2026-08-04), and reference (INV-2666), with strong counterparty name and narration overlap.",
+    "timestamp": "2026-08-28T16:21:16.826Z"
+  },
+  {
+    "stmt_id": "STM-5025",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1025",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1049",
+        "score": 0.575,
+        "signals": {
+          "amountDiffPct": 0.4548,
+          "dateDiffDays": 1,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1003",
+        "score": 0.516,
+        "signals": {
+          "amountDiffPct": 0.0357,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1012",
+        "score": 0.5,
+        "signals": {
+          "amountDiffPct": 2.2299,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1020",
+        "score": 0.475,
+        "signals": {
+          "amountDiffPct": 0.3672,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.75
+        }
+      }
+    ],
+    "decision": "LED-1025",
+    "confidence": "high",
+    "reason": "Exact match on amount (22621.88), date (2026-08-17), and reference invoice INV-2680 with corresponding counterparty Maple & Co.",
+    "timestamp": "2026-08-28T16:21:22.590Z"
+  },
+  {
+    "stmt_id": "STM-5006",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1006",
+        "score": 0.975,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 1,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1016",
+        "score": 0.5,
+        "signals": {
+          "amountDiffPct": 0.1547,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1047",
+        "score": 0.484,
+        "signals": {
+          "amountDiffPct": 0.0598,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1039",
+        "score": 0.424,
+        "signals": {
+          "amountDiffPct": 0.0171,
+          "dateDiffDays": 8,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1045",
+        "score": 0.405,
+        "signals": {
+          "amountDiffPct": 0.0608,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1006",
+    "confidence": "high",
+    "reason": "Exact amount match (29133.42), 1-day bank lag, matching counterparty, and explicit reference INV-2596 in the narration.",
+    "timestamp": "2026-08-28T16:21:28.460Z"
+  },
+  {
+    "stmt_id": "STM-5024",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1024",
+        "score": 0.9,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1001",
+        "score": 0.518,
+        "signals": {
+          "amountDiffPct": 0.0296,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1020",
+        "score": 0.475,
+        "signals": {
+          "amountDiffPct": 0.0675,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1023",
+        "score": 0.399,
+        "signals": {
+          "amountDiffPct": 0.0228,
+          "dateDiffDays": 17,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1029",
+        "score": 0.366,
+        "signals": {
+          "amountDiffPct": 0.0302,
+          "dateDiffDays": 15,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1024",
+    "confidence": "high",
+    "reason": "Exact amount match (38159.57), exact date match, and strong reference/name alignment with INV-2815 and Ivory Interiors.",
+    "timestamp": "2026-08-28T16:21:34.383Z"
+  },
+  {
+    "stmt_id": "STM-5042",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1042",
+        "score": 0.936,
+        "signals": {
+          "amountDiffPct": 0.0143,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1046",
+        "score": 0.427,
+        "signals": {
+          "amountDiffPct": 0.0289,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.2
+        }
+      },
+      {
+        "txn_id": "LED-1018",
+        "score": 0.425,
+        "signals": {
+          "amountDiffPct": 0.2912,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1007",
+        "score": 0.425,
+        "signals": {
+          "amountDiffPct": 0.0282,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1011",
+        "score": 0.4,
+        "signals": {
+          "amountDiffPct": 3.0416,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.75
+        }
+      }
+    ],
+    "decision": "LED-1042",
+    "confidence": "high",
+    "reason": "Matches exact date, reference INV-2339, counterparty Orbit Electronics, with a normal 1.43% fee difference in amount.",
+    "timestamp": "2026-08-28T16:21:40.232Z"
+  },
+  {
+    "stmt_id": "STM-5007",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1007",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1021",
+        "score": 0.611,
+        "signals": {
+          "amountDiffPct": 0.0032,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1049",
+        "score": 0.571,
+        "signals": {
+          "amountDiffPct": 0.0178,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1047",
+        "score": 0.5,
+        "signals": {
+          "amountDiffPct": 0.3631,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1035",
+        "score": 0.416,
+        "signals": {
+          "amountDiffPct": 0.047,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1007",
+    "confidence": "high",
+    "reason": "Exact match on amount (42234.73), date (2026-08-14), reference (INV-2994), and counterparty name (Redwood Pharma).",
+    "timestamp": "2026-08-28T16:21:46.278Z"
+  },
+  {
+    "stmt_id": "STM-5046",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1027",
+        "score": 0.562,
+        "signals": {
+          "amountDiffPct": 0.0311,
+          "dateDiffDays": 9,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1044",
+        "score": 0.475,
+        "signals": {
+          "amountDiffPct": 0.0055,
+          "dateDiffDays": 10,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1050",
+        "score": 0.475,
+        "signals": {
+          "amountDiffPct": 13.8519,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1018",
+        "score": 0.425,
+        "signals": {
+          "amountDiffPct": 0.0619,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1047",
+        "score": 0.419,
+        "signals": {
+          "amountDiffPct": 0.0181,
+          "dateDiffDays": 9,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "NO_MATCH",
+    "confidence": "high",
+    "reason": "None of the candidate ledger entries have a coherent combination of matching amount and date, with date differences ranging from 9 to 10 days for the closest amount matches.",
+    "timestamp": "2026-08-28T16:21:52.046Z"
+  },
+  {
+    "stmt_id": "STM-5044",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1044",
+        "score": 0.925,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 3,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1047",
+        "score": 0.494,
+        "signals": {
+          "amountDiffPct": 0.0238,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1027",
+        "score": 0.486,
+        "signals": {
+          "amountDiffPct": 0.0257,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1002",
+        "score": 0.375,
+        "signals": {
+          "amountDiffPct": 6.5578,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1003",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.4524,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1044",
+    "confidence": "high",
+    "reason": "Exact amount match (31722.9), a normal 3-day settlement lag (dateDiff=3d), and matching counterparty/invoice reference (Silverline Textiles, INV-2738).",
+    "timestamp": "2026-08-28T16:21:58.070Z"
+  },
+  {
+    "stmt_id": "STM-5036",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1036",
+        "score": 0.975,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 1,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1031",
+        "score": 0.551,
+        "signals": {
+          "amountDiffPct": 0.0167,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1027",
+        "score": 0.5,
+        "signals": {
+          "amountDiffPct": 0.5851,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1009",
+        "score": 0.45,
+        "signals": {
+          "amountDiffPct": 0.4379,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1041",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 0.1441,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.5
+        }
+      }
+    ],
+    "decision": "LED-1036",
+    "confidence": "high",
+    "reason": "Exact amount match (13507.37), matching reference INV-2668, consistent counterparty name (\"Bluepeak Retail\"), and a normal 1-day settlement lag.",
+    "timestamp": "2026-08-28T16:22:03.637Z"
+  },
+  {
+    "stmt_id": "STM-5049",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1034",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 1.2921,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1024",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.6886,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1022",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.3995,
+          "dateDiffDays": 8,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1003",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.456,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1020",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.6676,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "NO_MATCH",
+    "confidence": "high",
+    "reason": "None of the candidate ledger entries have amounts close to the bank statement amount of 11881.47 (the closest amount differs by ~40% and has an 8-day date gap).",
+    "timestamp": "2026-08-28T16:22:09.306Z"
+  },
+  {
+    "stmt_id": "STM-5005",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1005",
+        "score": 0.9,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1010",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.7327,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1031",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.3163,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1045",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.6581,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1022",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.5254,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1005",
+    "confidence": "high",
+    "reason": "Exact amount match ($9391.32), exact date (2026-08-10), matching invoice reference (INV-2821), and strong counterparty token overlap with \"Pinnacle Steel\" / \"PINSTE\".",
+    "timestamp": "2026-08-28T16:22:14.986Z"
+  },
+  {
+    "stmt_id": "STM-5003",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1003",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1025",
+        "score": 0.522,
+        "signals": {
+          "amountDiffPct": 0.0345,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1013",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 1.014,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1038",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.5414,
+          "dateDiffDays": 12,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1045",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.2047,
+          "dateDiffDays": 9,
+          "tokenOverlap": 0.75
+        }
+      }
+    ],
+    "decision": "LED-1003",
+    "confidence": "high",
+    "reason": "Exact amount match (21841.31), exact date match, and clear narration/reference alignment with Crestline Media and INV-2137.",
+    "timestamp": "2026-08-28T16:22:20.574Z"
+  },
+  {
+    "stmt_id": "STM-5048",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1038",
+        "score": 0.47,
+        "signals": {
+          "amountDiffPct": 0.0348,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1042",
+        "score": 0.382,
+        "signals": {
+          "amountDiffPct": 0.0435,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1015",
+        "score": 0.364,
+        "signals": {
+          "amountDiffPct": 0.07,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1046",
+        "score": 0.355,
+        "signals": {
+          "amountDiffPct": 0.0281,
+          "dateDiffDays": 10,
+          "tokenOverlap": 0.2
+        }
+      },
+      {
+        "txn_id": "LED-1043",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.3237,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "NO_MATCH",
+    "confidence": "high",
+    "reason": "None of the candidates share a coherent combination of name, amount, and reference signals with the bank row.",
+    "timestamp": "2026-08-28T16:22:26.258Z"
+  },
+  {
+    "stmt_id": "STM-5043",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1043",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1010",
+        "score": 0.599,
+        "signals": {
+          "amountDiffPct": 0.0115,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1016",
+        "score": 0.541,
+        "signals": {
+          "amountDiffPct": 0.0077,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1018",
+        "score": 0.505,
+        "signals": {
+          "amountDiffPct": 0.0327,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1040",
+        "score": 0.473,
+        "signals": {
+          "amountDiffPct": 0.0061,
+          "dateDiffDays": 8,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1043",
+    "confidence": "high",
+    "reason": "Exact match on amount (34730.21), date (2026-08-03), and strong narration reference to Amber Foods and INV-2286.",
+    "timestamp": "2026-08-28T16:22:31.920Z"
+  },
+  {
+    "stmt_id": "STM-5012",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1012",
+        "score": 0.9,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1025",
+        "score": 0.4,
+        "signals": {
+          "amountDiffPct": 0.6904,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1049",
+        "score": 0.375,
+        "signals": {
+          "amountDiffPct": 0.8312,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1020",
+        "score": 0.375,
+        "signals": {
+          "amountDiffPct": 0.8041,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1001",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.811,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1012",
+    "confidence": "high",
+    "reason": "Exact amount match (7003.94), exact date match (2026-08-17), and matching invoice reference (INV-2369) with strong counterparty overlap.",
+    "timestamp": "2026-08-28T16:22:37.402Z"
+  },
+  {
+    "stmt_id": "STM-5001",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1001",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1024",
+        "score": 0.522,
+        "signals": {
+          "amountDiffPct": 0.0288,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1020",
+        "score": 0.511,
+        "signals": {
+          "amountDiffPct": 0.0368,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1023",
+        "score": 0.471,
+        "signals": {
+          "amountDiffPct": 0.0066,
+          "dateDiffDays": 15,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1011",
+        "score": 0.375,
+        "signals": {
+          "amountDiffPct": 2.4495,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.75
+        }
+      }
+    ],
+    "decision": "LED-1001",
+    "confidence": "high",
+    "reason": "Exact match on amount (37061.76), date (2026-08-17), and reference (INV-2507) with the counterparty name clearly present in the bank narration.",
+    "timestamp": "2026-08-28T16:22:43.083Z"
+  },
+  {
+    "stmt_id": "STM-5031",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1031",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1040",
+        "score": 0.6,
+        "signals": {
+          "amountDiffPct": 0.6021,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1036",
+        "score": 0.575,
+        "signals": {
+          "amountDiffPct": 0.0169,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1035",
+        "score": 0.5,
+        "signals": {
+          "amountDiffPct": 0.6595,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1014",
+        "score": 0.474,
+        "signals": {
+          "amountDiffPct": 0.0283,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1031",
+    "confidence": "high",
+    "reason": "Exact match on amount (13736.29), date (2026-08-11), and reference/counterparty details.",
+    "timestamp": "2026-08-28T16:22:48.756Z"
+  },
+  {
+    "stmt_id": "STM-5050",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1017",
+        "score": 0.45,
+        "signals": {
+          "amountDiffPct": 0.9242,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1026",
+        "score": 0.425,
+        "signals": {
+          "amountDiffPct": 0.8757,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1050",
+        "score": 0.424,
+        "signals": {
+          "amountDiffPct": 0.017,
+          "dateDiffDays": 8,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1047",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.9326,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1027",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.9359,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "NO_MATCH",
+    "confidence": "high",
+    "reason": "None of the candidate ledger entries have amounts reasonably close to the bank amount of 2088.04, with the closest amount difference exceeding 1%.",
+    "timestamp": "2026-08-28T16:22:54.605Z"
+  },
+  {
+    "stmt_id": "STM-5045",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1007",
+        "score": 0.583,
+        "signals": {
+          "amountDiffPct": 0.0152,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1021",
+        "score": 0.493,
+        "signals": {
+          "amountDiffPct": 0.0185,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1042",
+        "score": 0.481,
+        "signals": {
+          "amountDiffPct": 0.0267,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1002",
+        "score": 0.475,
+        "signals": {
+          "amountDiffPct": 9.2148,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1046",
+        "score": 0.472,
+        "signals": {
+          "amountDiffPct": 0.0411,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.2
+        }
+      }
+    ],
+    "decision": "NO_MATCH",
+    "confidence": "high",
+    "reason": "None of the candidate ledger entries match the invoice reference (INV-2908) or have a coherent combination of matching amount and counterparty name.",
+    "timestamp": "2026-08-28T16:23:00.363Z"
+  },
+  {
+    "stmt_id": "STM-5026",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1026",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1037",
+        "score": 0.391,
+        "signals": {
+          "amountDiffPct": 0.0244,
+          "dateDiffDays": 11,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1017",
+        "score": 0.375,
+        "signals": {
+          "amountDiffPct": 0.39,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1012",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 1.3989,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1001",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.5467,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1026",
+    "confidence": "high",
+    "reason": "Exact match on amount (16801.9), exact date (2026-08-17), and strong counterparty/reference match with Falcon Freight and INV-2151.",
+    "timestamp": "2026-08-28T16:23:06.214Z"
+  },
+  {
+    "stmt_id": "STM-5040",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1040",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1016",
+        "score": 0.618,
+        "signals": {
+          "amountDiffPct": 0.0016,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1031",
+        "score": 0.6,
+        "signals": {
+          "amountDiffPct": 1.5131,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1035",
+        "score": 0.5,
+        "signals": {
+          "amountDiffPct": 0.1443,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1043",
+        "score": 0.473,
+        "signals": {
+          "amountDiffPct": 0.006,
+          "dateDiffDays": 8,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1040",
+    "confidence": "high",
+    "reason": "Exact amount match (34520.21), exact date match, and invoice number reference (INV-2546) match perfectly with the bank narration.",
+    "timestamp": "2026-08-28T16:23:11.966Z"
+  },
+  {
+    "stmt_id": "STM-5013",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1013",
+        "score": 0.9,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1011",
+        "score": 0.658,
+        "signals": {
+          "amountDiffPct": 0.0094,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1045",
+        "score": 0.325,
+        "signals": {
+          "amountDiffPct": 0.6051,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1017",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.6063,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1041",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.3128,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1013",
+    "confidence": "high",
+    "reason": "Exact amount match (10844.94), exact date match, and invoice number reference INV-2489 matches the bank narration INV-2489.",
+    "timestamp": "2026-08-28T16:23:17.742Z"
+  },
+  {
+    "stmt_id": "STM-5035",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1035",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1021",
+        "score": 0.564,
+        "signals": {
+          "amountDiffPct": 0.0418,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1031",
+        "score": 0.5,
+        "signals": {
+          "amountDiffPct": 1.9367,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1040",
+        "score": 0.5,
+        "signals": {
+          "amountDiffPct": 0.1686,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1049",
+        "score": 0.451,
+        "signals": {
+          "amountDiffPct": 0.0278,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1035",
+    "confidence": "high",
+    "reason": "Exact match on amount (40339.83), date (2026-08-11), reference (INV-2176), and counterparty name.",
+    "timestamp": "2026-08-28T16:23:23.503Z"
+  },
+  {
+    "stmt_id": "STM-5030",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1030",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1046",
+        "score": 0.42,
+        "signals": {
+          "amountDiffPct": 0.4806,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.8
+        }
+      },
+      {
+        "txn_id": "LED-1004",
+        "score": 0.42,
+        "signals": {
+          "amountDiffPct": 0.0461,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1025",
+        "score": 0.382,
+        "signals": {
+          "amountDiffPct": 0.0266,
+          "dateDiffDays": 8,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1016",
+        "score": 0.375,
+        "signals": {
+          "amountDiffPct": 0.3261,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.5
+        }
+      }
+    ],
+    "decision": "LED-1030",
+    "confidence": "high",
+    "reason": "Exact match on amount (23223.47), date (2026-08-09), and reference/counterparty details (INV-2331 and Zenith Auto Parts).",
+    "timestamp": "2026-08-28T16:23:29.174Z"
+  },
+  {
+    "stmt_id": "STM-5028",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1028",
+        "score": 0.9,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1014",
+        "score": 0.563,
+        "signals": {
+          "amountDiffPct": 0.0083,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1031",
+        "score": 0.409,
+        "signals": {
+          "amountDiffPct": 0.0205,
+          "dateDiffDays": 8,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1032",
+        "score": 0.4,
+        "signals": {
+          "amountDiffPct": 19.4247,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1019",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 0.1256,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.5
+        }
+      }
+    ],
+    "decision": "LED-1028",
+    "confidence": "high",
+    "reason": "Exact match on amount (14018.5) and date (2026-08-03), with strong narration overlap (\"NIMLOG\" matching \"Nimbus Logistics\" and reference INV-2047).",
+    "timestamp": "2026-08-28T16:23:35.130Z"
+  },
+  {
+    "stmt_id": "STM-5018",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1018",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1016",
+        "score": 0.517,
+        "signals": {
+          "amountDiffPct": 0.0242,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1010",
+        "score": 0.51,
+        "signals": {
+          "amountDiffPct": 0.0428,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1043",
+        "score": 0.509,
+        "signals": {
+          "amountDiffPct": 0.0317,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1040",
+        "score": 0.435,
+        "signals": {
+          "amountDiffPct": 0.0258,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1018",
+    "confidence": "high",
+    "reason": "Exact match on amount (33630.14), exact match on date (2026-08-05), and strong narrative/reference overlap with Orbit Electronics and INV-2169.",
+    "timestamp": "2026-08-28T16:23:40.789Z"
+  },
+  {
+    "stmt_id": "STM-5022",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1022",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1031",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.4405,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1035",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.5095,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1040",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.4268,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1011",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.8417,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1022",
+    "confidence": "high",
+    "reason": "Exact match on amount (19787.36), date (2026-08-11), and reference/counterparty (\"Vertex Industries\" and \"INV-2984\").",
+    "timestamp": "2026-08-28T16:23:46.488Z"
+  },
+  {
+    "stmt_id": "STM-5027",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1027",
+        "score": 0.931,
+        "signals": {
+          "amountDiffPct": 0.0156,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1044",
+        "score": 0.629,
+        "signals": {
+          "amountDiffPct": 0.0103,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1047",
+        "score": 0.547,
+        "signals": {
+          "amountDiffPct": 0.0344,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1036",
+        "score": 0.475,
+        "signals": {
+          "amountDiffPct": 1.3729,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1009",
+        "score": 0.45,
+        "signals": {
+          "amountDiffPct": 0.3337,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.75
+        }
+      }
+    ],
+    "decision": "LED-1027",
+    "confidence": "high",
+    "reason": "Matches exact date, reference INV-2955, and counterparty Bluepeak Retail, with an amount difference of 1.56% due to standard bank fees.",
+    "timestamp": "2026-08-28T16:23:52.432Z"
+  },
+  {
+    "stmt_id": "STM-5037",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1037",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1026",
+        "score": 0.389,
+        "signals": {
+          "amountDiffPct": 0.0251,
+          "dateDiffDays": 11,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1004",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 0.2926,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1012",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 1.459,
+          "dateDiffDays": 11,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1038",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.6384,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1037",
+    "confidence": "high",
+    "reason": "Exact match on amount (17222.94), date (2026-08-06), counterparty, and invoice reference (INV-2833).",
+    "timestamp": "2026-08-28T16:23:58.177Z"
+  },
+  {
+    "stmt_id": "STM-5021",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1021",
+        "score": 0.925,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 3,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1007",
+        "score": 0.536,
+        "signals": {
+          "amountDiffPct": 0.0032,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1049",
+        "score": 0.535,
+        "signals": {
+          "amountDiffPct": 0.0146,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1035",
+        "score": 0.506,
+        "signals": {
+          "amountDiffPct": 0.0436,
+          "dateDiffDays": 9,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1033",
+        "score": 0.4,
+        "signals": {
+          "amountDiffPct": 6.8103,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.75
+        }
+      }
+    ],
+    "decision": "LED-1021",
+    "confidence": "high",
+    "reason": "Exact amount match (42098.58), expected settlement date lag of 3 days, and direct reference to invoice INV-2450 with matching counterparty Harbor Exports.",
+    "timestamp": "2026-08-28T16:24:03.767Z"
+  },
+  {
+    "stmt_id": "STM-5038",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1038",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1015",
+        "score": 0.488,
+        "signals": {
+          "amountDiffPct": 0.0365,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1045",
+        "score": 0.425,
+        "signals": {
+          "amountDiffPct": 0.7342,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1013",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 3.3918,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1037",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 1.7654,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1038",
+    "confidence": "high",
+    "reason": "Exact match on amount (47628.84), date (2026-08-06), and invoice reference (INV-2518) with counterparty Crestline Media.",
+    "timestamp": "2026-08-28T16:24:09.539Z"
+  },
+  {
+    "stmt_id": "STM-5017",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1017",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1045",
+        "score": 0.612,
+        "signals": {
+          "amountDiffPct": 0.0029,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1039",
+        "score": 0.43,
+        "signals": {
+          "amountDiffPct": 0.0383,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1026",
+        "score": 0.375,
+        "signals": {
+          "amountDiffPct": 0.6394,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1006",
+        "score": 0.333,
+        "signals": {
+          "amountDiffPct": 0.0545,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1017",
+    "confidence": "high",
+    "reason": "Exact match on amount (27544.92) and date (2026-08-12), with clear reference to Falcon Freight and INV-2235 in both the bank narration and ledger entry.",
+    "timestamp": "2026-08-28T16:24:15.289Z"
+  },
+  {
+    "stmt_id": "STM-5009",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1009",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1004",
+        "score": 0.543,
+        "signals": {
+          "amountDiffPct": 0.0129,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1027",
+        "score": 0.45,
+        "signals": {
+          "amountDiffPct": 0.2619,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1036",
+        "score": 0.425,
+        "signals": {
+          "amountDiffPct": 0.7792,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1025",
+        "score": 0.398,
+        "signals": {
+          "amountDiffPct": 0.0623,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1009",
+    "confidence": "high",
+    "reason": "Exact match on amount (24031.89), date (2026-08-16), reference (INV-2129), and counterparty name (\"Bluepeak Retail\").",
+    "timestamp": "2026-08-28T16:24:20.942Z"
+  },
+  {
+    "stmt_id": "STM-5015",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1015",
+        "score": 0.8,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1038",
+        "score": 0.482,
+        "signals": {
+          "amountDiffPct": 0.0379,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1029",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.2564,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1010",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.407,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1043",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.4234,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1015",
+    "confidence": "high",
+    "reason": "Exact amount match (49433.93), exact date match (2026-08-04), and clear reference to invoice INV-2170 in the bank narration.",
+    "timestamp": "2026-08-28T16:24:26.626Z"
+  },
+  {
+    "stmt_id": "STM-5014",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1014",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1028",
+        "score": 0.563,
+        "signals": {
+          "amountDiffPct": 0.0084,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1031",
+        "score": 0.471,
+        "signals": {
+          "amountDiffPct": 0.0291,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1002",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 2.3679,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1036",
+        "score": 0.343,
+        "signals": {
+          "amountDiffPct": 0.0466,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1014",
+    "confidence": "high",
+    "reason": "Exact match on amount (14136.49), date (2026-08-07), and reference invoice INV-2029 with Silverline Textiles.",
+    "timestamp": "2026-08-28T16:24:32.184Z"
+  },
+  {
+    "stmt_id": "STM-5032",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1032",
+        "score": 0.949,
+        "signals": {
+          "amountDiffPct": 0.0115,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1028",
+        "score": 0.5,
+        "signals": {
+          "amountDiffPct": 0.9516,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1019",
+        "score": 0.45,
+        "signals": {
+          "amountDiffPct": 0.9577,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1043",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.9805,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1029",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.9828,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1032",
+    "confidence": "high",
+    "reason": "Matches exact date, same counterparty (Nimbus Logistics), matching reference (INV-2943), and expected minor amount difference due to bank fees.",
+    "timestamp": "2026-08-28T16:24:37.747Z"
+  },
+  {
+    "stmt_id": "STM-5002",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1002",
+        "score": 0.975,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 1,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1044",
+        "score": 0.475,
+        "signals": {
+          "amountDiffPct": 0.8677,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1049",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 0.8988,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.5
+        }
+      },
+      {
+        "txn_id": "LED-1014",
+        "score": 0.325,
+        "signals": {
+          "amountDiffPct": 0.7031,
+          "dateDiffDays": 7,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1025",
+        "score": 0.325,
+        "signals": {
+          "amountDiffPct": 0.8145,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.5
+        }
+      }
+    ],
+    "decision": "LED-1002",
+    "confidence": "high",
+    "reason": "Exact amount match (4197.38), close date (1 day lag), and direct counterparty and reference (Silverline Textiles, INV-2680) alignment.",
+    "timestamp": "2026-08-28T16:24:43.338Z"
+  },
+  {
+    "stmt_id": "STM-5041",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1041",
+        "score": 0.925,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 3,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1019",
+        "score": 0.43,
+        "signals": {
+          "amountDiffPct": 0.0157,
+          "dateDiffDays": 14,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1029",
+        "score": 0.4,
+        "signals": {
+          "amountDiffPct": 0.5989,
+          "dateDiffDays": 11,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1026",
+        "score": 0.38,
+        "signals": {
+          "amountDiffPct": 0.0607,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1036",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 0.1684,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.5
+        }
+      }
+    ],
+    "decision": "LED-1041",
+    "confidence": "high",
+    "reason": "Exact amount match (15781.58), matching invoice reference INV-2667, counterparty \"Lotus Handicrafts\", and an expected 3-day bank settlement lag.",
+    "timestamp": "2026-08-28T16:24:49.022Z"
+  },
+  {
+    "stmt_id": "STM-5011",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1011",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1013",
+        "score": 0.659,
+        "signals": {
+          "amountDiffPct": 0.0093,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1042",
+        "score": 0.4,
+        "signals": {
+          "amountDiffPct": 0.7561,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1001",
+        "score": 0.375,
+        "signals": {
+          "amountDiffPct": 0.7101,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1018",
+        "score": 0.325,
+        "signals": {
+          "amountDiffPct": 0.6805,
+          "dateDiffDays": 7,
+          "tokenOverlap": 0.75
+        }
+      }
+    ],
+    "decision": "LED-1011",
+    "confidence": "high",
+    "reason": "Exact amount match (10744.23), identical date, and matching counterparty name and reference (INV-2886).",
+    "timestamp": "2026-08-28T16:24:54.685Z"
+  },
+  {
+    "stmt_id": "STM-5020",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1020",
+        "score": 0.92,
+        "signals": {
+          "amountDiffPct": 0.018,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1010",
+        "score": 0.496,
+        "signals": {
+          "amountDiffPct": 0.0009,
+          "dateDiffDays": 13,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1012",
+        "score": 0.475,
+        "signals": {
+          "amountDiffPct": 4.0119,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1025",
+        "score": 0.475,
+        "signals": {
+          "amountDiffPct": 0.5517,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1043",
+        "score": 0.452,
+        "signals": {
+          "amountDiffPct": 0.0107,
+          "dateDiffDays": 15,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1020",
+    "confidence": "high",
+    "reason": "Matches exact date (2026-08-18), exact invoice reference (INV-2811), and counterparty name (Maple & Co), with the amount difference of 1.80% falling well within expected gateway fee deductions.",
+    "timestamp": "2026-08-28T16:25:00.512Z"
+  },
+  {
+    "stmt_id": "STM-5019",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1019",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1028",
+        "score": 0.45,
+        "signals": {
+          "amountDiffPct": 0.1437,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1032",
+        "score": 0.45,
+        "signals": {
+          "amountDiffPct": 22.3596,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1041",
+        "score": 0.429,
+        "signals": {
+          "amountDiffPct": 0.0159,
+          "dateDiffDays": 11,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1008",
+        "score": 0.416,
+        "signals": {
+          "amountDiffPct": 0.0584,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1019",
+    "confidence": "high",
+    "reason": "Exact amount match (16032.84), identical date (2026-08-01), matching reference INV-2577, and matching counterparty Nimbus Logistics.",
+    "timestamp": "2026-08-28T16:25:06.184Z"
+  },
+  {
+    "stmt_id": "STM-5033",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1033",
+        "score": 0.925,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 3,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1034",
+        "score": 0.523,
+        "signals": {
+          "amountDiffPct": 0.0399,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1021",
+        "score": 0.45,
+        "signals": {
+          "amountDiffPct": 0.872,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1031",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.6076,
+          "dateDiffDays": 8,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1024",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.8587,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1033",
+    "confidence": "high",
+    "reason": "Exact amount match (5390.17), matching invoice reference INV-2056, consistent counterparty name, and a standard 3-day settlement date lag.",
+    "timestamp": "2026-08-28T16:25:11.859Z"
+  },
+  {
+    "stmt_id": "STM-5023",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1023",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1001",
+        "score": 0.47,
+        "signals": {
+          "amountDiffPct": 0.0067,
+          "dateDiffDays": 15,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1029",
+        "score": 0.42,
+        "signals": {
+          "amountDiffPct": 0.0518,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1024",
+        "score": 0.401,
+        "signals": {
+          "amountDiffPct": 0.0223,
+          "dateDiffDays": 17,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1010",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 0.0619,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1023",
+    "confidence": "high",
+    "reason": "Exact match on amount (37309.22), date (2026-08-02), and strong reference alignment with INV-2069 and counterparty Quantum Devices.",
+    "timestamp": "2026-08-28T16:25:18.065Z"
+  },
+  {
+    "stmt_id": "STM-5010",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1010",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1043",
+        "score": 0.598,
+        "signals": {
+          "amountDiffPct": 0.0116,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1016",
+        "score": 0.538,
+        "signals": {
+          "amountDiffPct": 0.0195,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1018",
+        "score": 0.501,
+        "signals": {
+          "amountDiffPct": 0.0447,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1040",
+        "score": 0.471,
+        "signals": {
+          "amountDiffPct": 0.0178,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1010",
+    "confidence": "high",
+    "reason": "Exact amount match (35134.72), identical date (2026-08-05), and strong name/reference overlap between narration and ledger counterparty/reference.",
+    "timestamp": "2026-08-28T16:25:24.089Z"
+  },
+  {
+    "stmt_id": "STM-5016",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1016",
+        "score": 0.945,
+        "signals": {
+          "amountDiffPct": 0.0124,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1018",
+        "score": 0.571,
+        "signals": {
+          "amountDiffPct": 0.0121,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1040",
+        "score": 0.563,
+        "signals": {
+          "amountDiffPct": 0.014,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1010",
+        "score": 0.486,
+        "signals": {
+          "amountDiffPct": 0.0313,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1043",
+        "score": 0.486,
+        "signals": {
+          "amountDiffPct": 0.02,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1016",
+    "confidence": "high",
+    "reason": "Candidate LED-1016 matches the exact date (2026-08-08), exact reference (INV-2336), has strong counterparty name overlap, and shows an expected 1.24% gateway fee difference in amount.",
+    "timestamp": "2026-08-28T16:25:29.920Z"
+  },
+  {
+    "stmt_id": "STM-5039",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1039",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1024",
+        "score": 0.425,
+        "signals": {
+          "amountDiffPct": 0.2494,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1006",
+        "score": 0.425,
+        "signals": {
+          "amountDiffPct": 0.0168,
+          "dateDiffDays": 9,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1017",
+        "score": 0.423,
+        "signals": {
+          "amountDiffPct": 0.0398,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1045",
+        "score": 0.334,
+        "signals": {
+          "amountDiffPct": 0.0429,
+          "dateDiffDays": 7,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1039",
+    "confidence": "high",
+    "reason": "Exact match on amount (28642.54), exact match on date (2026-08-16), and exact invoice reference (INV-2311) present in both the bank narration and ledger entry.",
+    "timestamp": "2026-08-28T16:25:35.898Z"
+  },
+  {
+    "stmt_id": "STM-5047",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1005",
+        "score": 0.5,
+        "signals": {
+          "amountDiffPct": 1.7891,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1045",
+        "score": 0.469,
+        "signals": {
+          "amountDiffPct": 0.0463,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1017",
+        "score": 0.432,
+        "signals": {
+          "amountDiffPct": 0.0491,
+          "dateDiffDays": 2,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1010",
+        "score": 0.375,
+        "signals": {
+          "amountDiffPct": 0.2545,
+          "dateDiffDays": 5,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1006",
+        "score": 0.325,
+        "signals": {
+          "amountDiffPct": 0.1009,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.5
+        }
+      }
+    ],
+    "decision": "NO_MATCH",
+    "confidence": "high",
+    "reason": "None of the candidate ledger entries have amounts reasonably close to the bank amount of 26192.93 (the closest amount is over 1000 away with a 4.63% difference for an incorrect counterparty, and the matching counterparty candidates have vastly different amounts).",
+    "timestamp": "2026-08-28T16:25:41.700Z"
+  },
+  {
+    "stmt_id": "STM-5008",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1008",
+        "score": 0.925,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 3,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1019",
+        "score": 0.355,
+        "signals": {
+          "amountDiffPct": 0.0552,
+          "dateDiffDays": 4,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1031",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 0.1028,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1035",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 0.6245,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1040",
+        "score": 0.35,
+        "signals": {
+          "amountDiffPct": 0.5612,
+          "dateDiffDays": 6,
+          "tokenOverlap": 0.75
+        }
+      }
+    ],
+    "decision": "LED-1008",
+    "confidence": "high",
+    "reason": "Exact amount match, matching reference INV-2696, and a logical 3-day bank settlement lag with counterparty Harbor Exports.",
+    "timestamp": "2026-08-28T16:25:47.601Z"
+  },
+  {
+    "stmt_id": "STM-5034",
+    "candidates_considered": [
+      {
+        "txn_id": "LED-1034",
+        "score": 1,
+        "signals": {
+          "amountDiffPct": 0,
+          "dateDiffDays": 0,
+          "tokenOverlap": 1
+        }
+      },
+      {
+        "txn_id": "LED-1033",
+        "score": 0.455,
+        "signals": {
+          "amountDiffPct": 0.0383,
+          "dateDiffDays": 3,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1024",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.8642,
+          "dateDiffDays": 0,
+          "tokenOverlap": 0.25
+        }
+      },
+      {
+        "txn_id": "LED-1015",
+        "score": 0.3,
+        "signals": {
+          "amountDiffPct": 0.8951,
+          "dateDiffDays": 15,
+          "tokenOverlap": 0.75
+        }
+      },
+      {
+        "txn_id": "LED-1003",
+        "score": 0.275,
+        "signals": {
+          "amountDiffPct": 0.7627,
+          "dateDiffDays": 1,
+          "tokenOverlap": 0.25
+        }
+      }
+    ],
+    "decision": "LED-1034",
+    "confidence": "high",
+    "reason": "Exact match on amount (5183.55) and date (2026-08-19), with strong narration overlap (\"Greenfield Agro\" and invoice reference \"INV-2750\").",
+    "timestamp": "2026-08-28T16:25:53.352Z"
+  }
+]

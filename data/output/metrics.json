@@ -1,0 +1,12 @@
+{
+  "total_bank_rows": 50,
+  "matched": 44,
+  "exceptions": 6,
+  "true_positives": 44,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "correctly_flagged_orphans": 6,
+  "match_rate": 0.88,
+  "precision": 1,
+  "recall": 1
+}

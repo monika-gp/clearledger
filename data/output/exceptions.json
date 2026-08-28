@@ -1,0 +1,74 @@
+[
+  {
+    "stmt_id": "STM-5046",
+    "bank_row": {
+      "stmt_id": "STM-5046",
+      "date": "2026-08-05",
+      "amount": "31547.32",
+      "narration": "IMPS BLUEPEAK RETAIL INV-2480",
+      "utr": "UTR350859"
+    },
+    "reason": "None of the candidate ledger entries have a coherent combination of matching amount and date, with date differences ranging from 9 to 10 days for the closest amount matches.",
+    "candidates_seen": 5
+  },
+  {
+    "stmt_id": "STM-5049",
+    "bank_row": {
+      "stmt_id": "STM-5049",
+      "date": "2026-08-19",
+      "amount": "11881.47",
+      "narration": "IMPS VERTEX INDUSTRIES INV-2581",
+      "utr": "UTR856004"
+    },
+    "reason": "None of the candidate ledger entries have amounts close to the bank statement amount of 11881.47 (the closest amount differs by ~40% and has an 8-day date gap).",
+    "candidates_seen": 5
+  },
+  {
+    "stmt_id": "STM-5048",
+    "bank_row": {
+      "stmt_id": "STM-5048",
+      "date": "2026-08-03",
+      "amount": "45971.44",
+      "narration": "IMPS IVORY INTERIORS INV-2058",
+      "utr": "UTR129841"
+    },
+    "reason": "None of the candidates share a coherent combination of name, amount, and reference signals with the bank row.",
+    "candidates_seen": 5
+  },
+  {
+    "stmt_id": "STM-5050",
+    "bank_row": {
+      "stmt_id": "STM-5050",
+      "date": "2026-08-14",
+      "amount": "2088.04",
+      "narration": "NEFT FALCON FREIGHT INV-2798",
+      "utr": "UTR438291"
+    },
+    "reason": "None of the candidate ledger entries have amounts reasonably close to the bank amount of 2088.04, with the closest amount difference exceeding 1%.",
+    "candidates_seen": 5
+  },
+  {
+    "stmt_id": "STM-5045",
+    "bank_row": {
+      "stmt_id": "STM-5045",
+      "date": "2026-08-12",
+      "amount": "42875.31",
+      "narration": "IMPS SILVERLINE TEXTILES INV-2908",
+      "utr": "UTR899326"
+    },
+    "reason": "None of the candidate ledger entries match the invoice reference (INV-2908) or have a coherent combination of matching amount and counterparty name.",
+    "candidates_seen": 5
+  },
+  {
+    "stmt_id": "STM-5047",
+    "bank_row": {
+      "stmt_id": "STM-5047",
+      "date": "2026-08-10",
+      "amount": "26192.93",
+      "narration": "UPI PINNACLE STEEL INV-2591",
+      "utr": "UTR198170"
+    },
+    "reason": "None of the candidate ledger entries have amounts reasonably close to the bank amount of 26192.93 (the closest amount is over 1000 away with a 4.63% difference for an incorrect counterparty, and the matching counterparty candidates have vastly different amounts).",
+    "candidates_seen": 5
+  }
+]
