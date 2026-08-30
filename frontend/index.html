@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ClearLedger</title>
+<style>
+  :root {
+    --bg: #F7F7F5;
+    --panel: #FFFFFF;
+    --border: #DDDDD8;
+    --ink: #1A1A18;
+    --ink-dim: #7A7A73;
+    --accent: #1F3A5F;
+    --accent-soft: #E8EDF3;
+    --good: #2E6B45;
+    --good-soft: #E7F1EA;
+    --bad: #8C3A2B;
+    --bad-soft: #F5E8E4;
+    --warn: #8A6A1F;
+    --warn-soft: #F2ECDD;
+    --sans: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --mono: "SF Mono", "IBM Plex Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+  }
+  .shell { max-width: 980px; margin: 0 auto; padding: 28px 28px 90px; }
+
+  /* --- Header --- */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .wordmark { font-size: 16px; font-weight: 700; }
+  .status { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--ink-dim); }
+  .status .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--good); }
+  .status.offline .dot { background: var(--bad); }
+
+  .subbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .subbar h1 { font-size: 20px; font-weight: 700; margin: 0; }
+  .subbar .date { font-size: 12.5px; color: var(--ink-dim); margin-top: 2px; }
+
+  button.primary {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--sans);
+  }
+  button.primary:disabled { opacity: 0.55; cursor: default; }
+  button.secondary {
+    background: var(--panel);
+    color: var(--ink);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--sans);
+  }
+
+  /* --- Summary strip --- */
+  .summary {
+    display: flex;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .summary .stat { flex: 1; padding: 14px 20px; border-right: 1px solid var(--border); }
+  .summary .stat:last-child { border-right: none; }
+  .summary .stat .value {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .summary .stat .label { font-size: 11.5px; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.03em; margin-top: 2px; }
+  .summary .stat.good .value { color: var(--good); }
+  .summary .stat.bad .value { color: var(--bad); }
+
+  /* --- Filter bar --- */
+  .filters { display: flex; gap: 8px; margin-bottom: 12px; }
+  select {
+    font-family: var(--sans);
+    font-size: 12.5px;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--panel);
+    color: var(--ink);
+  }
+
+  /* --- Table (hero) --- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  th {
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--ink-dim);
+    font-weight: 600;
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+    background: #FAFAF8;
+  }
+  td { padding: 11px 14px; border-bottom: 1px solid var(--border); }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover { background: #FAFAF8; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.mono, th.mono { font-family: var(--mono); font-size: 12.5px; }
+  .reason-cell { color: var(--ink-dim); font-size: 12.5px; }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 999px;
+  }
+  .pill.matched { background: var(--good-soft); color: var(--good); }
+  .pill.exception { background: var(--bad-soft); color: var(--bad); }
+  .pill.review { background: var(--warn-soft); color: var(--warn); }
+
+  .empty, .error-state {
+    font-size: 13px;
+    color: var(--ink-dim);
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .error-state .title { font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+
+  /* --- Detail panel (overlay) --- */
+  .overlay {
+    position: fixed; inset: 0;
+    background: rgba(20, 20, 18, 0.35);
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 20px;
+    z-index: 10;
+  }
+  .overlay.open { display: flex; }
+  .detail-panel {
+    background: var(--panel);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    max-width: 560px;
+    width: 100%;
+    padding: 24px 26px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .detail-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 18px;
+  }
+  .detail-header h2 { font-size: 15px; margin: 0; }
+  .detail-header .close { cursor: pointer; color: var(--ink-dim); font-size: 13px; }
+
+  .compare {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    gap: 8px 12px;
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+  .compare .colhead { font-size: 11px; text-transform: uppercase; letter-spacing: 0.03em; color: var(--ink-dim); font-weight: 600; }
+  .compare .rowlabel { color: var(--ink-dim); }
+  .compare .cell { font-family: var(--mono); font-size: 12.5px; }
+
+  .confidence-block { text-align: center; margin: 20px 0; padding: 16px; background: #FAFAF8; border-radius: 8px; }
+  .confidence-block .num { font-family: var(--mono); font-size: 30px; font-weight: 700; color: var(--accent); }
+  .confidence-block .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-dim); margin-top: 2px; }
+
+  .reason-block { font-size: 13px; line-height: 1.5; margin-bottom: 18px; }
+  .reason-block .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.03em; color: var(--ink-dim); font-weight: 600; margin-bottom: 4px; }
+
+  .decided-toggle {
+    font-size: 12.5px;
+    color: var(--accent);
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .decided-panel {
+    display: none;
+    background: #FAFAF8;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    font-size: 12.5px;
+  }
+  .decided-panel.open { display: block; }
+  .decided-panel .check-row { margin-bottom: 6px; }
+  .decided-panel .check-row .mark { font-family: var(--mono); margin-right: 6px; }
+  .decided-panel .check-row .mark.yes { color: var(--good); }
+  .decided-panel .check-row .mark.no { color: var(--bad); }
+  .decided-panel .agent-line { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); color: var(--ink-dim); }
+
+  .detail-actions { display: flex; gap: 8px; }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="wordmark">ClearLedger</div>
+    <div class="status" id="status"><span class="dot"></span><span id="status-text">Connected</span></div>
+  </div>
+
+  <div class="subbar">
+    <div>
+      <h1>Reconciliation</h1>
+      <div class="date" id="run-date"></div>
+    </div>
+    <button class="primary" id="run-btn">Run reconciliation</button>
+  </div>
+
+  <div id="content"></div>
+
+  <div class="overlay" id="overlay">
+    <div class="detail-panel" id="detail-panel"></div>
+  </div>
+</div>
+
+<script>
+let state = { metrics: null, rows: [], auditLog: [], filter: "all" };
+
+async function ping() {
+  try {
+    const res = await fetch('/api/run-status');
+    return res.ok;
+  } catch (e) { return false; }
+}
+
+async function loadData() {
+  const online = await ping();
+  setStatus(online);
+  try {
+    const res = await fetch('/api/reconciliation-data');
+    const data = await res.json();
+    if (data.error) {
+      renderError();
+      return;
+    }
+    state.metrics = data.metrics;
+    state.auditLog = data.auditLog || [];
+    state.rows = buildRows(data.matches, data.exceptions);
+    document.getElementById('run-date').textContent =
+      new Date().toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+    render();
+  } catch (e) {
+    renderError();
+  }
+}
+
+function setStatus(online) {
+  const el = document.getElementById('status');
+  el.className = 'status' + (online ? '' : ' offline');
+  document.getElementById('status-text').textContent = online ? 'Connected' : 'Disconnected';
+}
+
+function buildRows(matches, exceptions) {
+  const rows = [];
+  for (const m of matches) {
+    rows.push({
+      key: m.stmt_id,
+      ledger_id: m.ledger_row ? m.ledger_row.txn_id : m.txn_id,
+      bank_id: m.stmt_id,
+      amount: m.ledger_row ? m.ledger_row.amount : (m.bank_row ? m.bank_row.amount : '—'),
+      status: m.confidence === 'low' ? 'review' : 'matched',
+      confidence: m.confidence,
+      reason: m.reason,
+      ledger_row: m.ledger_row,
+      bank_row: m.bank_row,
+    });
+  }
+  for (const e of exceptions) {
+    rows.push({
+      key: e.stmt_id || (e.ledger_row ? e.ledger_row.txn_id : Math.random()),
+      ledger_id: e.ledger_row ? e.ledger_row.txn_id : '—',
+      bank_id: e.stmt_id || '—',
+      amount: e.ledger_row ? e.ledger_row.amount : (e.bank_row ? e.bank_row.amount : '—'),
+      status: 'exception',
+      confidence: null,
+      reason: e.reason,
+      ledger_row: e.ledger_row,
+      bank_row: e.bank_row,
+    });
+  }
+  return rows;
+}
+
+function render() {
+  renderSummary();
+  renderFilters();
+  renderTable();
+}
+
+function renderSummary() {
+  const m = state.metrics;
+  document.getElementById('content').innerHTML = `
+    <div class="summary" id="summary-slot"></div>
+    <div class="filters" id="filters-slot"></div>
+    <div id="table-slot"></div>
+  `;
+  document.getElementById('summary-slot').innerHTML = `
+    <div class="stat"><div class="value">${m.total_bank_rows}</div><div class="label">Transactions</div></div>
+    <div class="stat good"><div class="value">${m.matched}</div><div class="label">Matched</div></div>
+    <div class="stat ${m.exceptions > 0 ? 'bad' : ''}"><div class="value">${m.exceptions}</div><div class="label">Exceptions</div></div>
+  `;
+}
+
+function renderFilters() {
+  document.getElementById('filters-slot').innerHTML = `
+    <select id="filter-select">
+      <option value="all">All</option>
+      <option value="matched">Matched</option>
+      <option value="exception">Exceptions</option>
+      <option value="review">Needs review</option>
+    </select>
+  `;
+  document.getElementById('filter-select').addEventListener('change', (e) => {
+    state.filter = e.target.value;
+    renderTable();
+  });
+}
+
+function renderTable() {
+  const rows = state.filter === 'all'
+    ? state.rows
+    : state.rows.filter(r => r.status === state.filter);
+
+  if (rows.length === 0) {
+    document.getElementById('table-slot').innerHTML = '<div class="empty">No transactions match this filter.</div>';
+    return;
+  }
+
+  const trs = rows.map(r => `
+    <tr onclick="openDetail('${r.key}')">
+      <td class="mono">${r.ledger_id}</td>
+      <td class="mono">${r.bank_id}</td>
+      <td class="mono">₹${formatAmount(r.amount)}</td>
+      <td>${statusPill(r.status)}</td>
+      <td class="reason-cell">${r.reason}</td>
+    </tr>`).join('');
+
+  document.getElementById('table-slot').innerHTML = `
+    <table>
+      <thead><tr>
+        <th class="mono">Ledger ID</th><th class="mono">Bank ID</th>
+        <th class="mono">Amount</th><th>Status</th><th>Reason</th>
+      </tr></thead>
+      <tbody>${trs}</tbody>
+    </table>`;
+}
+
+function formatAmount(a) {
+  if (a === '—' || a === undefined) return '—';
+  return Number(a).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function statusPill(status) {
+  if (status === 'matched') return '<span class="pill matched">Matched</span>';
+  if (status === 'exception') return '<span class="pill exception">Exception</span>';
+  return '<span class="pill review">Review</span>';
+}
+
+function openDetail(key) {
+  const row = state.rows.find(r => String(r.key) === String(key));
+  if (!row) return;
+
+  const audit = state.auditLog.find(a => a.stmt_id === row.bank_id);
+  const candidate = audit ? audit.candidates_considered.find(c => c.txn_id === row.ledger_id) : null;
+
+  const ledgerDate = row.ledger_row ? row.ledger_row.date : '—';
+  const bankDate = row.bank_row ? row.bank_row.date : '—';
+  const ledgerName = row.ledger_row ? row.ledger_row.counterparty : '—';
+  const bankName = row.bank_row ? row.bank_row.narration : '—';
+  const ledgerAmt = row.ledger_row ? formatAmount(row.ledger_row.amount) : '—';
+  const bankAmt = row.bank_row ? formatAmount(row.bank_row.amount) : '—';
+
+  const confidencePct = row.confidence === 'high' ? 96 : row.confidence === 'medium' ? 72 : row.confidence === 'low' ? 45 : null;
+
+  let decidedHtml = '<div class="decided-panel" id="decided-panel">';
+  if (candidate) {
+    const amtOk = candidate.signals.amountDiffPct <= 0.03;
+    const dateOk = candidate.signals.dateDiffDays <= 4;
+    const overlapPct = Math.round(candidate.signals.tokenOverlap * 100);
+    decidedHtml += `
+      <div class="check-row"><span class="mark ${amtOk ? 'yes' : 'no'}">${amtOk ? '✓' : '✗'}</span>Amount within tolerance (${(candidate.signals.amountDiffPct * 100).toFixed(2)}% diff)</div>
+      <div class="check-row"><span class="mark ${dateOk ? 'yes' : 'no'}">${dateOk ? '✓' : '✗'}</span>Settlement date within range (${candidate.signals.dateDiffDays} days)</div>
+      <div class="check-row"><span class="mark ${overlapPct >= 50 ? 'yes' : 'no'}">${overlapPct >= 50 ? '✓' : '✗'}</span>Narration similarity: ${overlapPct}%</div>
+      <div class="agent-line">Agent decision: <strong>${row.status === 'matched' ? 'Match' : 'No match'}</strong><br/>${row.reason}</div>
+    `;
+  } else {
+    decidedHtml += `<div class="agent-line">${row.status === 'exception' && !row.bank_row ? 'No corresponding bank statement entry was found to compare against.' : row.reason}</div>`;
+  }
+  decidedHtml += '</div>';
+
+  document.getElementById('detail-panel').innerHTML = `
+    <div class="detail-header">
+      <h2>Transaction ${row.ledger_id}${row.bank_id !== '—' ? ' / ' + row.bank_id : ''}</h2>
+      <span class="close" onclick="closeDetail()">Close</span>
+    </div>
+    <div class="compare">
+      <div></div><div class="colhead">Ledger</div><div class="colhead">Bank</div>
+      <div class="rowlabel">Date</div><div class="cell">${ledgerDate}</div><div class="cell">${bankDate}</div>
+      <div class="rowlabel">Amount</div><div class="cell">₹${ledgerAmt}</div><div class="cell">₹${bankAmt}</div>
+      <div class="rowlabel">Reference</div><div class="cell">${ledgerName}</div><div class="cell">${bankName}</div>
+    </div>
+    ${confidencePct !== null ? `
+    <div class="confidence-block">
+      <div class="num">${confidencePct}%</div>
+      <div class="lbl">Match confidence</div>
+    </div>` : ''}
+    <div class="reason-block">
+      <div class="lbl">Reason</div>
+      ${row.reason}
+    </div>
+    <span class="decided-toggle" onclick="toggleDecided()">How ClearLedger decided →</span>
+    ${decidedHtml}
+    <div class="detail-actions">
+      <button class="primary" onclick="closeDetail()">Accept</button>
+      <button class="secondary" onclick="closeDetail()">Flag</button>
+    </div>
+  `;
+  document.getElementById('overlay').classList.add('open');
+}
+
+function toggleDecided() {
+  document.getElementById('decided-panel').classList.toggle('open');
+}
+
+function closeDetail() {
+  document.getElementById('overlay').classList.remove('open');
+}
+
+function renderError() {
+  document.getElementById('content').innerHTML = `
+    <div class="error-state">
+      <div class="title">Unable to load reconciliation data</div>
+      Check your server connection and try again.
+    </div>`;
+}
+
+document.getElementById('overlay').addEventListener('click', (e) => {
+  if (e.target.id === 'overlay') closeDetail();
+});
+
+document.getElementById('run-btn').addEventListener('click', async () => {
+  const btn = document.getElementById('run-btn');
+  btn.disabled = true;
+  btn.textContent = 'Running…';
+  try {
+    await fetch('/api/run', { method: 'POST' });
+    pollRun(btn);
+  } catch (e) {
+    btn.disabled = false;
+    btn.textContent = 'Run reconciliation';
+  }
+});
+
+function pollRun(btn) {
+  const interval = setInterval(async () => {
+    const res = await fetch('/api/run-status');
+    const status = await res.json();
+    if (!status.running) {
+      clearInterval(interval);
+      btn.disabled = false;
+      btn.textContent = 'Run reconciliation';
+      loadData();
+    }
+  }, 3000);
+}
+
+loadData();
+</script>
+</body>
+</html>

@@ -1,6 +1,7 @@
 [
   {
     "stmt_id": "STM-5046",
+    "type": "no_match_in_ledger",
     "bank_row": {
       "stmt_id": "STM-5046",
       "date": "2026-08-05",
@@ -8,11 +9,13 @@
       "narration": "IMPS BLUEPEAK RETAIL INV-2480",
       "utr": "UTR350859"
     },
-    "reason": "None of the candidate ledger entries have a coherent combination of matching amount and date, with date differences ranging from 9 to 10 days for the closest amount matches.",
+    "ledger_row": null,
+    "reason": "None of the candidates provide a coherent combination of matching amount and date, with date differences ranging from 9 to 10 days and significant amount mismatches on the top candidates.",
     "candidates_seen": 5
   },
   {
     "stmt_id": "STM-5049",
+    "type": "no_match_in_ledger",
     "bank_row": {
       "stmt_id": "STM-5049",
       "date": "2026-08-19",
@@ -20,11 +23,13 @@
       "narration": "IMPS VERTEX INDUSTRIES INV-2581",
       "utr": "UTR856004"
     },
-    "reason": "None of the candidate ledger entries have amounts close to the bank statement amount of 11881.47 (the closest amount differs by ~40% and has an 8-day date gap).",
+    "ledger_row": null,
+    "reason": "None of the candidate ledger entries match the bank statement amount of 11881.47 within an acceptable fee-deduction threshold, as the closest amounts have substantial differences (>39%).",
     "candidates_seen": 5
   },
   {
     "stmt_id": "STM-5048",
+    "type": "no_match_in_ledger",
     "bank_row": {
       "stmt_id": "STM-5048",
       "date": "2026-08-03",
@@ -32,11 +37,13 @@
       "narration": "IMPS IVORY INTERIORS INV-2058",
       "utr": "UTR129841"
     },
-    "reason": "None of the candidates share a coherent combination of name, amount, and reference signals with the bank row.",
+    "ledger_row": null,
+    "reason": "None of the candidates share a coherent combination of signals, as all candidates have significant amount differences and completely mismatched counterparty names/references.",
     "candidates_seen": 5
   },
   {
     "stmt_id": "STM-5050",
+    "type": "no_match_in_ledger",
     "bank_row": {
       "stmt_id": "STM-5050",
       "date": "2026-08-14",
@@ -44,11 +51,13 @@
       "narration": "NEFT FALCON FREIGHT INV-2798",
       "utr": "UTR438291"
     },
-    "reason": "None of the candidate ledger entries have amounts reasonably close to the bank amount of 2088.04, with the closest amount difference exceeding 1%.",
+    "ledger_row": null,
+    "reason": "None of the candidate ledger entries have a matching amount, as the closest amount difference is 1.70% with an excessive date difference of 8 days.",
     "candidates_seen": 5
   },
   {
     "stmt_id": "STM-5045",
+    "type": "no_match_in_ledger",
     "bank_row": {
       "stmt_id": "STM-5045",
       "date": "2026-08-12",
@@ -56,11 +65,13 @@
       "narration": "IMPS SILVERLINE TEXTILES INV-2908",
       "utr": "UTR899326"
     },
-    "reason": "None of the candidate ledger entries match the invoice reference (INV-2908) or have a coherent combination of matching amount and counterparty name.",
+    "ledger_row": null,
+    "reason": "None of the candidates provide a coherent match, as the only candidate with the correct counterparty (LED-1002) has a massive amount difference of 921%.",
     "candidates_seen": 5
   },
   {
     "stmt_id": "STM-5047",
+    "type": "no_match_in_ledger",
     "bank_row": {
       "stmt_id": "STM-5047",
       "date": "2026-08-10",
@@ -68,7 +79,98 @@
       "narration": "UPI PINNACLE STEEL INV-2591",
       "utr": "UTR198170"
     },
-    "reason": "None of the candidate ledger entries have amounts reasonably close to the bank amount of 26192.93 (the closest amount is over 1000 away with a 4.63% difference for an incorrect counterparty, and the matching counterparty candidates have vastly different amounts).",
+    "ledger_row": null,
+    "reason": "None of the candidate ledger entries have amounts reasonably close to the bank statement amount of 26192.93 (all differences exceed 4%).",
     "candidates_seen": 5
+  },
+  {
+    "stmt_id": null,
+    "type": "missing_in_bank",
+    "bank_row": null,
+    "ledger_row": {
+      "txn_id": "LED-1047",
+      "date": "2026-08-14",
+      "amount": "30985.21",
+      "counterparty": "Redwood Pharma",
+      "reference": "INV-2517",
+      "status": "pending"
+    },
+    "reason": "No corresponding bank statement entry found for this ledger transaction.",
+    "candidates_seen": 0
+  },
+  {
+    "stmt_id": null,
+    "type": "missing_in_bank",
+    "bank_row": null,
+    "ledger_row": {
+      "txn_id": "LED-1046",
+      "date": "2026-08-13",
+      "amount": "44714.17",
+      "counterparty": "Zenith Auto Parts",
+      "reference": "INV-2421",
+      "status": "pending"
+    },
+    "reason": "No corresponding bank statement entry found for this ledger transaction.",
+    "candidates_seen": 0
+  },
+  {
+    "stmt_id": null,
+    "type": "missing_in_bank",
+    "bank_row": null,
+    "ledger_row": {
+      "txn_id": "LED-1048",
+      "date": "2026-08-02",
+      "amount": "8795.81",
+      "counterparty": "Acme Traders",
+      "reference": "INV-2121",
+      "status": "pending"
+    },
+    "reason": "No corresponding bank statement entry found for this ledger transaction.",
+    "candidates_seen": 0
+  },
+  {
+    "stmt_id": null,
+    "type": "missing_in_bank",
+    "bank_row": null,
+    "ledger_row": {
+      "txn_id": "LED-1045",
+      "date": "2026-08-09",
+      "amount": "27464.29",
+      "counterparty": "Crestline Media",
+      "reference": "INV-2072",
+      "status": "pending"
+    },
+    "reason": "No corresponding bank statement entry found for this ledger transaction.",
+    "candidates_seen": 0
+  },
+  {
+    "stmt_id": null,
+    "type": "missing_in_bank",
+    "bank_row": null,
+    "ledger_row": {
+      "txn_id": "LED-1049",
+      "date": "2026-08-16",
+      "amount": "41494.76",
+      "counterparty": "Maple & Co",
+      "reference": "INV-2683",
+      "status": "pending"
+    },
+    "reason": "No corresponding bank statement entry found for this ledger transaction.",
+    "candidates_seen": 0
+  },
+  {
+    "stmt_id": null,
+    "type": "missing_in_bank",
+    "bank_row": null,
+    "ledger_row": {
+      "txn_id": "LED-1050",
+      "date": "2026-08-06",
+      "amount": "2124.13",
+      "counterparty": "Bluepeak Retail",
+      "reference": "INV-2700",
+      "status": "pending"
+    },
+    "reason": "No corresponding bank statement entry found for this ledger transaction.",
+    "candidates_seen": 0
   }
 ]

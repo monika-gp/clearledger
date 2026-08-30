@@ -48,6 +48,7 @@ async function run() {
   const matches = [];
   const exceptions = [];
   const auditLog = [];
+  const matchedLedgerIds = new Set();
 
   console.log(`Processing ${bank.length} bank rows against ${ledger.length} ledger rows...\n`);
 
@@ -99,15 +100,21 @@ async function run() {
     if (result.decision === "NO_MATCH") {
       exceptions.push({
         stmt_id: bankRow.stmt_id,
+        type: "no_match_in_ledger",
         bank_row: bankRow,
+        ledger_row: null,
         reason: result.reason,
         candidates_seen: candidates.length,
       });
       console.log(`  [${bankRow.stmt_id}] -> EXCEPTION (${result.reason})`);
     } else {
+      const matchedLedgerRow = ledger.find((l) => l.txn_id === result.decision);
+      matchedLedgerIds.add(result.decision);
       matches.push({
         stmt_id: bankRow.stmt_id,
         txn_id: result.decision,
+        bank_row: bankRow,
+        ledger_row: matchedLedgerRow || null,
         confidence: result.confidence,
         reason: result.reason,
       });
@@ -115,6 +122,21 @@ async function run() {
     }
 
     await sleep(4500); // 15 requests/min free-tier limit = 1 every 4s minimum; 4.5s for safety margin
+  }
+
+  // --- Ledger-side orphans: rows never claimed by any bank row match ---
+  for (const ledgerRow of ledger) {
+    if (!matchedLedgerIds.has(ledgerRow.txn_id)) {
+      exceptions.push({
+        stmt_id: null,
+        type: "missing_in_bank",
+        bank_row: null,
+        ledger_row: ledgerRow,
+        reason: "No corresponding bank statement entry found for this ledger transaction.",
+        candidates_seen: 0,
+      });
+      console.log(`  [${ledgerRow.txn_id}] -> EXCEPTION (missing in bank statement)`);
+    }
   }
 
   // --- Scoring against ground truth ---
