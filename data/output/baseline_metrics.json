@@ -1,0 +1,11 @@
+{
+  "approach": "naive_exact_match",
+  "total_bank_rows": 50,
+  "matched": 31,
+  "no_match": 19,
+  "true_positives": 31,
+  "false_positives": 0,
+  "false_negatives": 13,
+  "precision": 1,
+  "recall": 0.7045
+}

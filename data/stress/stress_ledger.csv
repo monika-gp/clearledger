@@ -1,0 +1,7 @@
+txn_id,date,amount,counterparty,reference,status
+LED-9001,2026-08-15,10000.00,Acme Traders,INV-9000A,settled
+LED-9002,2026-08-15,10000.00,Apex Traders,INV-9000B,settled
+LED-9003,2026-08-16,13333.33,Coral Foods,INV-9001A,settled
+LED-9004,2026-08-16,13333.33,Crestline Foods,INV-9001B,settled
+LED-9005,2026-08-17,16666.66,Vertex Industries,INV-9002A,settled
+LED-9006,2026-08-17,16666.66,Vantage Industries,INV-9002B,settled

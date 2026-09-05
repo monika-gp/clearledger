@@ -1,0 +1,38 @@
+[
+  {
+    "stmt_id": "STM-9501",
+    "candidates_with_identical_amount_date": [
+      "LED-9001",
+      "LED-9002"
+    ],
+    "decision": "LED-9001",
+    "confidence": "high",
+    "reason": "Exact match on amount (10,000.00), date (2026-08-15), and strong token/reference overlap matching \"Acme Traders\" and \"INV9000A\".",
+    "expected": "LED-9001",
+    "outcome": "CORRECT — resolved ambiguity via narration"
+  },
+  {
+    "stmt_id": "STM-9502",
+    "candidates_with_identical_amount_date": [
+      "LED-9003",
+      "LED-9004"
+    ],
+    "decision": "LED-9003",
+    "confidence": "high",
+    "reason": "Perfect amount match (0.00% diff), exact date match (0d diff), and strong name/reference overlap with \"Coral Foods\" and invoice INV9001A.",
+    "expected": "LED-9003",
+    "outcome": "CORRECT — resolved ambiguity via narration"
+  },
+  {
+    "stmt_id": "STM-9503",
+    "candidates_with_identical_amount_date": [
+      "LED-9005",
+      "LED-9006"
+    ],
+    "decision": "LED-9005",
+    "confidence": "high",
+    "reason": "Exact amount match (16666.66), exact date match (2026-08-17), and strong text/reference overlap with Vertex Industries and INV-9002A.",
+    "expected": "LED-9005",
+    "outcome": "CORRECT — resolved ambiguity via narration"
+  }
+]
